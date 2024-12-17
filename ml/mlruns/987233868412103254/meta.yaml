@@ -1,0 +1,6 @@
+artifact_location: file:///Users/wil/Desktop/Master/M2/DevOps_MlOps/DevOpsProject/ml/mlruns/987233868412103254
+creation_time: 1734442839326
+experiment_id: '987233868412103254'
+last_update_time: 1734442839326
+lifecycle_stage: active
+name: xgboost_prediction_model

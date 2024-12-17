@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wil/Desktop/Master/M2/DevOps_MlOps/DevOpsProject/ml/mlruns/987233868412103254/7a8f2f5927e54fb682c81e0143ab12c1/artifacts
+end_time: 1734442841708
+entry_point_name: ''
+experiment_id: '987233868412103254'
+lifecycle_stage: active
+run_id: 7a8f2f5927e54fb682c81e0143ab12c1
+run_name: upset-shoat-450
+run_uuid: 7a8f2f5927e54fb682c81e0143ab12c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734442839744
+status: 3
+tags: []
+user_id: wil
