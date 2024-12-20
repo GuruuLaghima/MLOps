@@ -74,6 +74,8 @@ Avant toute chose, une clé SSH est nécessaire pour se connecter à l'instance 
    ```bash
    terraform output
    ```
+	Egalement nous pouvons la retrouver sur la console AWS :
+![image](https://github.com/user-attachments/assets/9dc34c97-0d89-4590-9a33-fedda8261297)
 
 ---
 
