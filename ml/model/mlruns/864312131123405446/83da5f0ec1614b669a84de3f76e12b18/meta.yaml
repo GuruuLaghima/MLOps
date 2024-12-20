@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wil/Desktop/Master/M2/DevOps_MlOps/DevOpsProject/ml/model/mlruns/864312131123405446/83da5f0ec1614b669a84de3f76e12b18/artifacts
+end_time: 1734652979432
+entry_point_name: ''
+experiment_id: '864312131123405446'
+lifecycle_stage: active
+run_id: 83da5f0ec1614b669a84de3f76e12b18
+run_name: languid-chimp-291
+run_uuid: 83da5f0ec1614b669a84de3f76e12b18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734652977312
+status: 3
+tags: []
+user_id: wil

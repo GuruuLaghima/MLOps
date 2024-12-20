@@ -38,7 +38,7 @@ resource "aws_security_group" "instance_sg" {
 }
 
 resource "aws_instance" "my_instance" {
-  ami                         = "ami-00d81861317c2cc1f" 
+  ami                         = "ami-00d81861317c2cc1f"  # Remplace par ton AMI
   instance_type               = "t2.micro"
   key_name                    = "myKey" 
   vpc_security_group_ids      = [aws_security_group.instance_sg.id]

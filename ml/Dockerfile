@@ -16,3 +16,6 @@ EXPOSE 5001
 
 # Run the Flask API
 CMD ["python", "app.py"]
+
+
+
