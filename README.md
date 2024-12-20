@@ -107,7 +107,7 @@ Avant toute chose, une clé SSH est nécessaire pour se connecter à l'instance 
    - **Grafana** (Plateforme de visualisation des métriques.)
    - **API ML** (API pour effectuer des prédictions à partir d'un modèle XGBoost.)
 
-   Exécute :
+   Exécutez :
    ```bash
    cd docker
    docker-compose up -d
@@ -190,11 +190,14 @@ Mise en place d'une **API ML** basée sur un modèle XGBoost et d'assurer le **v
    ```bash
    mlflow ui
    ```
+   <img width="732" alt="image" src="https://github.com/user-attachments/assets/bc8245c9-a6e0-4ca2-9d7d-72ac5dd90fe8" />
+
 
    Accédez à l'interface sur `http://127.0.0.1:5000` pour voir :
    - Les **expériences** enregistrées.
    - Les **modèles sauvegardés**.
    - Les métriques comme la RMSE.
+<img width="1172" alt="image" src="https://github.com/user-attachments/assets/ff4333da-d5c0-475b-9ade-460fff4be988" />
 
 ---
 
@@ -377,6 +380,9 @@ Le monitoring permet de suivre les **performances de l'infrastructure** et de l'
    - Allez dans **Dashboards > Import**.
    - Utilisez un tableau de bord prédéfini depuis [Grafana Dashboards](https://grafana.com/grafana/dashboards/).  
    - Exemple : **ID 1860** (Node Exporter Full).
+  
+     <img width="610" alt="image" src="https://github.com/user-attachments/assets/6a3af744-f4e8-4855-a080-1dfbc27591c6" />
+
 
 2. **Création de graphiques personnalisés** :
    - Accédez à **Dashboards > New Panel**.
@@ -404,7 +410,8 @@ Le monitoring permet de suivre les **performances de l'infrastructure** et de l'
      http://<PUBLIC_IP>:9090
      ```
    - Vérifiez que le job **`xgboost-api`** apparaît dans **Status > Targets**.  
-   - Assurez-vous que les métriques sont visibles dans **Graph** en exécutant des requêtes PromQL.
+<img width="1435" alt="image" src="https://github.com/user-attachments/assets/458a93ec-2725-4ade-8a1c-96fdf420a300" />
+
 
 2. **Grafana** :
    - Vérifiez que les **tableaux de bord** affichent correctement les métriques collectées par Prometheus.
