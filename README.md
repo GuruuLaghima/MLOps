@@ -422,13 +422,13 @@ Le monitoring permet de suivre les **performances de l'infrastructure** et de l'
 
 
 
-### **🚑 Dépannage : Problèmes de ports 🔧**
+### ** Dépannage : Problèmes de ports **
 
-Si l'accès à certains services est bloqué (par exemple, Grafana, Prometheus ou l'API) 🚫 :
+Si l'accès à certains services est bloqué (par exemple, Grafana, Prometheus ou l'API) :
 
-1. **🔍 Vérifiez les règles de sécurité** configurées dans Terraform pour les ports requis.  
+1. **Vérifiez les règles de sécurité** configurées dans Terraform pour les ports requis.  
 
-   - Exemple pour ouvrir le port **5001** utilisé par l'API 🛠️ :
+   - Exemple pour ouvrir le port **5001** utilisé par l'API :
 
    ```hcl
    ingress {
@@ -439,27 +439,25 @@ Si l'accès à certains services est bloqué (par exemple, Grafana, Prometheus o
    }
    ```
 
-2. **🖥️ Modifiez les règles directement dans la console AWS** :  
-   - Allez dans **EC2 > Security Groups** 📋.  
-   - Sélectionnez le groupe de sécurité attaché à votre instance 🌐.  
-   - Ajoutez une règle pour autoriser le port spécifique (exemple : TCP/5001, source : `0.0.0.0/0`) ✅.
+2. **Modifiez les règles directement dans la console AWS** :  
+   - Allez dans **EC2 > Security Groups**.  
+   - Sélectionnez le groupe de sécurité attaché à votre instance.  
+   - Ajoutez une règle pour autoriser le port spécifique (exemple : TCP/5001, source : `0.0.0.0/0`).
 
-3. **🚀 Redéployez les modifications avec Terraform** pour appliquer les nouvelles règles :  
+3. **Redéployez les modifications avec Terraform** pour appliquer les nouvelles règles :  
    ```bash
    cd terraform
    terraform apply
    ```
 
-4. **🔄 Redémarrez les services concernés** si nécessaire :  
+4. **Redémarrez les services concernés** si nécessaire :  
    ```bash
    docker-compose restart
    ```
 
-5. **🧪 Testez l'accès aux services** :  
-   - **🚀 API** : `https://<PUBLIC_IP>:5001/predict`  
-   - **📊 Grafana** : `http://<PUBLIC_IP>:3000`  
-   - **📈 Prometheus** : `http://<PUBLIC_IP>:9090`  
-
-🎉 **Votre accès devrait maintenant fonctionner !** Si le problème persiste, vérifiez les logs des services pour identifier d'autres erreurs. 🛡️
+5. **Testez l'accès aux services** :  
+   - **API** : `https://<PUBLIC_IP>:5001/predict`  
+   - **Grafana** : `http://<PUBLIC_IP>:3000`  
+   - **Prometheus** : `http://<PUBLIC_IP>:9090`  
 
 ---
